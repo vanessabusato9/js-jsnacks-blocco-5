@@ -7,3 +7,11 @@ const people = [
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
 
+
+const nomi = []; //array vuoto per contenere i nomi
+
+for (let i = 0; i < people.length; i++) {
+  nomi.push(`'${people[i].name}'`);
+}
+
+console.log(nomi.join(', '));
