@@ -7,3 +7,11 @@ const posts = [
 
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
+
+const autori = [];
+
+for (let i =0; i < posts.length; i++) {
+   autori.push(`'${posts[i].author}'`);
+}
+
+console.log(autori.join(', '));
